@@ -29,6 +29,12 @@
 		},
 		{
 			"path": "../OFM-ConfigTransfer"
+		},
+		{
+			"path": "../OFM-Network"
+		},
+		{
+			"path": "../OFM-UsbExchange"
 		}
 	],
 	"settings": {
