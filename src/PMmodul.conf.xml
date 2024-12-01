@@ -5,14 +5,18 @@
   <op:config name="%LOG_NumChannelsDefault%" value="3" />
   <op:config name="%BTN_NumChannelsDefault%" value="3" />
 
-  <op:config name="%UCT_VerifyVersion%" value="0.3" />
+  <op:config name="%UCT_VerifyVersion%" value="0.2" />
   <op:config name="%NET_VerifyVersion%" value="0.3" />
-  <op:config name="%PM_VerifyVersion%" value="3.2" />
+  <op:config name="%PM_VerifyVersion%" value="3.5" />
   <op:config name="%LOG_VerifyVersion%" value="3.4" />
   <op:config name="%BTN_VerifyVersion%" value="0.5" />
   <op:config name="%BASE_VerifyVersion%" value="1.2" />
 
-  <op:config name="%PM_ApplicationVersion%" value="3.3" />
-  <op:config name="%PM_ReplacesVersions%" value="3.2 3.1 3.0 2.15" />
+  <op:config name="%PM_ApplicationVersion%" value="3.5" />
+  <op:config name="%PM_ReplacesVersions%" value="3.4 3.3 3.2 3.1 3.0 2.15" />
   <op:config name="%BTN_ShowInputSelector%" value="0" />
+
+  <op:nowarn id="3" regex="PM_getCalibrationData" />
+  <op:nowarn id="3" regex="PM_setCalibrationData" />
+  <op:nowarn id="3" regex="PM_processFunction" />
 </KNX>

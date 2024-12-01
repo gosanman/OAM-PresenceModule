@@ -5,7 +5,7 @@
     #include "FileTransferModule.h"
     #include "UsbExchangeModule.h"
     #include "VirtualButtonModule.h"
-    #if defined(KNX_IP_W5500) || defined(KNX_IP_GENERIC) || defined(KNX_IP_WIFI)
+    #if defined(KNX_IP_LAN) || defined(KNX_IP_WIFI)
         #include "NetworkModule.h"
     #endif
 #endif
@@ -20,7 +20,7 @@
 
 void setup()
 {
-    const uint8_t firmwareRevision = 1;
+    const uint8_t firmwareRevision = 0;
 
 #ifdef ARDUINO_ARCH_RP2040
     #ifdef I2C_WIRE
@@ -37,7 +37,7 @@ void setup()
     openknx.addModule(5, openknxVirtualButtonModule);
     openknx.addModule(3, openknxFileTransferModule);
     openknx.addModule(8, openknxUsbExchangeModule);
-    #if defined(KNX_IP_W5500) || defined(KNX_IP_GENERIC) || defined(KNX_IP_WIFI)
+    #if defined(KNX_IP_LAN) || defined(KNX_IP_WIFI)
     openknx.addModule(7, openknxNetwork);
     #endif
 #endif
